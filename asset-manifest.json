@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/VDAY/static/css/main.e545b039.css",
-    "main.js": "/VDAY/static/js/main.55242ae9.js",
+    "main.js": "/VDAY/static/js/main.f7c939c1.js",
     "static/js/453.24ce6f11.chunk.js": "/VDAY/static/js/453.24ce6f11.chunk.js",
     "static/media/Seashell-PNG-Background.webp": "/VDAY/static/media/Seashell-PNG-Background.c0235cc0951ba21b0e2a.webp",
     "index.html": "/VDAY/index.html",
     "main.e545b039.css.map": "/VDAY/static/css/main.e545b039.css.map",
-    "main.55242ae9.js.map": "/VDAY/static/js/main.55242ae9.js.map",
+    "main.f7c939c1.js.map": "/VDAY/static/js/main.f7c939c1.js.map",
     "453.24ce6f11.chunk.js.map": "/VDAY/static/js/453.24ce6f11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e545b039.css",
-    "static/js/main.55242ae9.js"
+    "static/js/main.f7c939c1.js"
   ]
 }
