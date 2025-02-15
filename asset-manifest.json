@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/VDAY/event_management_frontend/static/css/main.298356c4.css",
-    "main.js": "/VDAY/event_management_frontend/static/js/main.3274bcde.js",
-    "static/js/453.24ce6f11.chunk.js": "/VDAY/event_management_frontend/static/js/453.24ce6f11.chunk.js",
-    "static/media/Seashell-PNG-Background.webp": "/VDAY/event_management_frontend/static/media/Seashell-PNG-Background.c0235cc0951ba21b0e2a.webp",
-    "index.html": "/VDAY/event_management_frontend/index.html",
-    "main.298356c4.css.map": "/VDAY/event_management_frontend/static/css/main.298356c4.css.map",
-    "main.3274bcde.js.map": "/VDAY/event_management_frontend/static/js/main.3274bcde.js.map",
-    "453.24ce6f11.chunk.js.map": "/VDAY/event_management_frontend/static/js/453.24ce6f11.chunk.js.map"
+    "main.css": "/VDAY/static/css/main.e545b039.css",
+    "main.js": "/VDAY/static/js/main.55242ae9.js",
+    "static/js/453.24ce6f11.chunk.js": "/VDAY/static/js/453.24ce6f11.chunk.js",
+    "static/media/Seashell-PNG-Background.webp": "/VDAY/static/media/Seashell-PNG-Background.c0235cc0951ba21b0e2a.webp",
+    "index.html": "/VDAY/index.html",
+    "main.e545b039.css.map": "/VDAY/static/css/main.e545b039.css.map",
+    "main.55242ae9.js.map": "/VDAY/static/js/main.55242ae9.js.map",
+    "453.24ce6f11.chunk.js.map": "/VDAY/static/js/453.24ce6f11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.298356c4.css",
-    "static/js/main.3274bcde.js"
+    "static/css/main.e545b039.css",
+    "static/js/main.55242ae9.js"
   ]
 }
