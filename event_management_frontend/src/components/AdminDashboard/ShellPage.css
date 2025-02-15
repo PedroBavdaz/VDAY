@@ -1,0 +1,111 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #a0e7e5, #004e64);
+}
+
+.ShellPage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shell {
+  width: 100px;
+  height: 100px;
+  background: url('Seashell-PNG-Background.webp') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.bubbles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px 20px;
+  margin: 5px;
+  animation: bubble 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.pop-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 80%;
+  width: auto;
+  min-width: 300px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+.rising-bubbles-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rising-bubble {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: rise 5s linear infinite;
+  animation-delay: calc(var(--index) * -0.1s);
+  left: var(--x-coordinate);
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.rising-bubble:nth-child(odd) {
+  animation-duration: 3s;
+}
