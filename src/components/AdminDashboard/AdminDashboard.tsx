@@ -8,15 +8,15 @@ export function ShellPage() {
   const [bubbles, setBubbles] = useState<Array<{ id: number, x: string }>>([]);
 
   const handleShellClick = () => {
-    const audio = new Audio('/bubble-pop.mp3');
+    const audio = new Audio(process.env.PUBLIC_URL + '/bubble-pop.mp3');
     audio.play();
     setShowMessage(true);
   };
 
   const handleBubbleClick = () => {
-    const audio = new Audio('/bubble-pop.mp3');
+    const audio = new Audio(process.env.PUBLIC_URL + '/bubble-pop.mp3');
     audio.play();
-    setPopMessage('I know I’m far, but I still want to give you at least something. I know it’s a little dumb project but Happy Valentine’s, Linda, if you haven’t heard it already. I hope this little virtual shell and bubble can make you smile. I love you.');
+    setPopMessage('I know I’m far, but I still want to give you at least something, and due to all i been working on is this, I thought it be funny. I know it’s a little dumb project but Happy Valentine’s Linda, if you haven’t heard it already. I hope this little virtual shell and bubble can make you smile. I love you.');
     setShowShell(false);
     setShowMessage(false);
     generateBubbles();
@@ -32,17 +32,16 @@ export function ShellPage() {
   };
 
   useEffect(() => {
-    if (bubbles.length > 0) {
-      const lastBubble = bubbles[bubbles.length - 1];
-      const bubbleElement = document.getElementById(`bubble-${lastBubble.id}`);
+    bubbles.forEach((bubble) => {
+      const bubbleElement = document.getElementById(`bubble-${bubble.id}`);
       if (bubbleElement) {
         bubbleElement.addEventListener('animationend', () => {
-          const audio = new Audio('/bubble-pop.mp3');
+          const audio = new Audio(process.env.PUBLIC_URL + '/bubble-pop.mp3');
           audio.play();
-          setBubbles(prevBubbles => prevBubbles.filter(b => b.id !== lastBubble.id));
+          setBubbles(prevBubbles => prevBubbles.filter(b => b.id !== bubble.id));
         });
       }
-    }
+    });
   }, [bubbles]);
 
   return (
